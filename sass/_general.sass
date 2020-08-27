@@ -1,0 +1,77 @@
+.calendar
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate3d(-50%, -50%, 0)
+    width: 216px
+    margin: 0 auto
+    box-shadow: inset 1px 1px 0 rgba(255, 255, 255, 0.4)
+    background-color: #ffffff
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.06) 0%, rgba(255, 255, 255, 0.06) 100%)
+    &__header
+        width: 100%
+        height: 35px
+        box-shadow: 0 1px 0 rgba(255, 255, 255, 0.53), inset 0 -1px 0 rgba(0, 0, 0, 0.12)
+        background-color: #e1e8ec
+        background-image: linear-gradient(to top, rgba(0, 0, 0, 0.21) 0%, rgba(255, 255, 255, 0.21) 100%)
+        border-top-left-radius: 4px
+        border-top-right-radius: 4px
+        padding: 12px 17px
+    &__header-inner
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        i 
+            color: #525d66
+            cursor: pointer
+    
+    &__title
+        text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8)
+        color: #525d66
+        font-family: $Helvetica
+        font-size: 13px
+        font-weight: 700
+    .week-days
+        display: flex
+        width: 100%
+        height: 29px
+        background-color: #e4e7e9
+        border: none
+    tbody
+        display: block
+    tr
+        display: flex
+        width: 100%
+        height: 30px
+        +center
+    th
+        display: flex
+        width: 31px
+        height: 30px
+        color: #9da7af
+        font-family: $Helvetica
+        font-size: 12px
+        font-weight: 400
+        text-transform: uppercase
+        +center
+    td
+        display: flex
+        width: 31px
+        height: 30px
+        color: #525d66
+        font-size: 12px
+        font-weight: 400
+        +center
+        border: 1px solid #e4e7e9
+        span
+            color: #9da7af
+            font-family: $Helvetica
+            font-size: 12px
+            font-weight: 400
+    .current-date
+        box-shadow: inset 0 4px 9px rgba(0, 0, 0, 0.54)
+        background-color: $blue
+        text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.26)
+        color: #ffffff
+        cursor: pointer
+        
